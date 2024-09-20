@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
+
+:root {
+    --theme_white: #fff;
+    --theme_mine_shaft: #222;
+    --theme_deep_pink: #f20c90;
+    --theme_ph_orange: #ff6e0c;
+    --theme_sea_serpent: #49cdd5;
+    --theme_emperor: #6e5e74;
+    --theme_dark_gray: #8f8f8f;
+    --theme_very_dark_gray: #4b4b4b;
+    --theme_very_light_red: #ff6c6c;
+    --display: "Montserrat";
+    --reg: 400;
+    --med: 500;
+    --semi: 600;
+    --bold: 700;
+}
+
+.first-page{
+/* background-color: #DD307C; */
+/* background: rgb(215,51,126);
+background: linear-gradient(0deg, rgba(215,51,126,1) 5%, rgba(215,51,126,1) 28%, rgba(243,94,152,1) 57%, rgba(224,46,122,1) 100%);  */
+background-color: lightpink;
+padding-bottom: 20px;
+}
+
+/* nav bar container*/
+#header {
+    display: flex;
+    background-color: var(--theme_white);
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* dunkin donut logo */
+#header-img {
+    width: 100%;
+    height: auto;
+}
+
+.right-nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-right: 100px;
+    font-weight: var(--bold);
+    }
+
+.nav-link {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: var(--display);
+    color: var(--theme_dark_gray)
+}
+/* Question: how to make transition smooth? */
+.nav-link:hover{
+    cursor: pointer;
+    color: var(--theme_ph_orange);
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: 650px 476px;
+    margin-left: 100px;
+    font-family: var(--display);
+    padding-top: 30px;
+}
+
+.child1-text {
+    font-size: 35px;
+    width: 500px;
+    height: 150px;
+    font-weight: var(--bold);
+    color: var(--theme_white);
+}
+
+.child2-text{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: var(--theme_white);
+    font-weight: var(--med);
+    width: 500px;
+}
+
+.franchise {
+    width: 500px;
+    padding-top: 5px;
+    color: var(--theme_white);
+    font-size: 25px;
+}
+
+
+#form {
+    width: 500px;
+}
+
+#email {
+    padding-left: 10px;
+    width: 450px;
+    height: 40px;
+    border:transparent;
+}
+
+#email-caption{
+    color: var(--theme_white);
+}
+/* figure out how to style submit button */
+#submit {
+    font-family: var(--reg);
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+} 
+
+.img-donuts-coffee {
+    max-width: 100%;
+    height: auto;
+}
+
+/* MENU PAGE STARTS HERE */
+
+.explore-flavors {
+    font-size: 50px;
+    color: var(--theme_ph_orange);
+    font-weight: var(--bold);
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.parent-menu {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    justify-content:flex-start;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* #menu-child-1, #menu-child-2, #menu-child-3 {
+    width: 750px;
+    height: auto;
+    border: solid 1px var(--theme_white);
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+} */
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.orange-nav-parent {
+    display:flex;
+    width: 100%;
+    height: 60px;
+    background-color: var(--theme_ph_orange);
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2px;
+    flex-wrap: wrap;
+}
+
+.orange-right{
+    border-radius: 20px;
+    border: 1px solid var(--theme_white);
+    padding: 10px;
+}
+
+.orange-right:hover {
+    background-color: var(--theme_white);
+}
+
+.contact-us-text:hover{
+    color: var(--theme_ph_orange);
+}
+
+.contact-us-text{
+    color:var(--theme_white);
+    font-family: var(--display);
+    font-weight: var(--bold);
+    text-decoration: none;
+}
+/* 
+Desktop: 769px and up
+Mobile: 425px and down
+Tablet: Between 426px and 768px
+*/
+
+/* tablet and desktop screen */
+
+
+
