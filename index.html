@@ -19,7 +19,7 @@
   <header id="header">
 
     <div class="left">
-      <img id="header-img" src="https://dunkin.com.ph/_ipx/s_175x60/logo.svg" alt="dunkin-logo">
+      <a href="#first-page"><img id="header-img" src="https://dunkin.com.ph/_ipx/s_175x60/logo.svg" alt="dunkin-logo"></a>
       </div>
       
     <nav id="nav-bar">
@@ -48,13 +48,9 @@
         <h2 class="franchise">Franchise with Us</h2>
 
         <form method="post" id="form">
-          
-          <label for="email" id="email-label"><span id="email-caption"></label>
-          <input id="email" name="email" type="email" required placeholder="(email address)">
-        
-          <div id="submit-button">
-            <a href="#"><input type="submit"  id="submit" value="Submit" /></a>
-          </div>
+
+          <input id="email" name="email" type="email" required placeholder="Enter your email address">
+            <a href="#"><input type="submit"  id= "send" value= "Send" /></a>
 
         </form>
 
@@ -105,7 +101,7 @@
 <section id = "about-us-page"> 
 
   <div class = about-us-text>
-    <p id="about-us-main"> ABOUT US </p>
+    <p id="about-us-main"> THE DUNKIN' STORY </p>
   <p id="about-us-secondary"> Dunkin' brings indulgence to everybody's day with its signature donuts, coffee, baked goods and more </p>
   </div>
   
@@ -119,7 +115,47 @@
 
   <div class = franchise-text>
     <p id="franchise-main"> HOW TO APPLY? </p>
-  <p id="franchise-secondary"> Simply write a Letter of Intent addressed to the Site Acquisition and Development Head stating the following information and email to franchiseinquiry@goldendonuts.ph </p>
+    <p id="franchise-secondary"> Simply write a Letter of Intent addressed to the Site Acquisition and Development Head stating the following information and email to <span id = "franchise-email"> franchiseinquiry@goldendonuts.ph </span> </p>
+  </div>
+
+  <div class="container-franchise-secondary">
+    
+    <div class = "card-1">
+      <div class="image-card-1">
+        <img src="https://api.dunkin.com.ph/storage/uploads/franchise/2023-05-29/professional-icon_10-29-56-079228.jpg" alt="professional" loading="lazy" width="30%">
+      </div>
+      <div class="card-1-caption">
+        <p>Your professional and/or entrepreneural details, either as an individual or a corporate entity.</p>
+      </div>
+    </div>
+
+    <div class = "card-2">
+      <div class="image-card-2">
+        <img src="https://api.dunkin.com.ph/storage/uploads/franchise/2023-05-29/dunkin-pin_10-31-00-990845.svg" alt="location" loading="lazy" title="location" width="30%"> 
+      </div>
+      <div class="card-2-caption">
+        <p>Preferred province for franchise.</p>
+      </div>
+    </div>
+
+    <div class = "card-3">
+      <div class="image-card-3">
+        <img src="https://api.dunkin.com.ph/storage/uploads/franchise/2023-05-29/donut-variety_10-31-46-078653.svg" alt="variety" loading="lazy" title="variety" width="30%">
+      </div>
+      <div class="card-3-caption">
+        <p> Why you chose Dunkin' and why do you believe your province is already ready to have Dunkin' as their next international food brand?</p>
+      </div>
+    </div>
+
+    <div class = "card-4">
+      <div class="image-card-4">
+        <img src="https://api.dunkin.com.ph/storage/uploads/franchise/2023-05-29/dunkin-branches_10-32-16-914966.svg" alt="store" loading="lazy" title="store" width = "30%">
+      </div>
+      <div class="card-4-caption">
+        <p>If you can, also mention and discuss the top cities or municipalities in your province which you believe must we penetrate first.</p>
+      </div>
+    </div>
+
   </div>
 
 </section>
@@ -273,30 +309,3 @@
 </body>
 
 </html> -->
-
-.parent-menu {
-  display: flex;
-  width: 75%;
-  justify-content:center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5%;
-  gap: 15px;
-}
-.menu-child-1, .menu-child-2, .menu-child-3, .menu-child-4, .menu-child-5, .menu-child-6 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-  flex-wrap: wrap;
-}
-.menu-child-1 > img, .menu-child-2 > img, .menu-child-3 > img, .menu-child-4 > img, .menu-child-5 > img, .menu-child-6 > img {
-  width: 250px;
-  border: solid 1px var(--theme_white);
-  border-bottom-left-radius: 18px;
-  border-bottom-right-radius: 18px;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
-}

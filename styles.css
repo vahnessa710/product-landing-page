@@ -26,14 +26,15 @@
 }
 
 #first-page{
-/* background-color: #DD307C; */
-/* background: rgb(215,51,126);
-background: linear-gradient(0deg, rgba(215,51,126,1) 5%, rgba(215,51,126,1) 28%, rgba(243,94,152,1) 57%, rgba(224,46,122,1) 100%);  */
-background-color: lightpink;
-padding-bottom: 20px;
+    background: rgb(223,63,132);
+    background: linear-gradient(180deg, rgba(223,63,132,1) 17%, rgb(224, 71, 138) 39%, rgb(194, 124, 150) 67%, rgb(255, 255, 255) 94%, rgb(255, 255, 255) 100%);
+    /* background-color: lightpink; */
+    padding-bottom: 100px;
+    padding-top: 15px;
 }
 
 /* nav bar container*/
+
 #header {
     display: flex;
     background-color: var(--theme_white);
@@ -46,7 +47,8 @@ padding-bottom: 20px;
     justify-content: space-between;
 }
 
-/* dunkin donut logo */
+/* dunkin donut logo on the upper left */
+
 #header-img {
     width: 100%;
     height: auto;
@@ -67,14 +69,14 @@ padding-bottom: 20px;
     text-decoration: none;
     font-size: 17px;
     font-family: var(--display);
-    color: var(--theme_dark_gray)
+    color: var(--theme_dark_gray);
 }
+
 /* Question: how to make transition smooth? */
 .nav-link:hover{
     cursor: pointer;
     color: var(--theme_ph_orange);
 }
-
 
 .parent {
     display: grid;
@@ -115,23 +117,24 @@ padding-bottom: 20px;
 
 #email {
     padding-left: 10px;
-    width: 450px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 300px;
     height: 40px;
     border:transparent;
 }
 
-#email-caption{
-    color: var(--theme_white);
-}
 /* figure out how to style submit button */
-#submit {
+#send {
     font-weight: var(--bold);
     width: 100px;
     height: 40px;
-    margin-top: 10px;
     border-color: transparent;
     background-color: var(--theme_sea_serpent);
-    color: var(--theme_white)
+    color: var(--theme_white);
+    cursor: pointer;
+    margin-left: 5px;
 } 
 
 .img-donuts-coffee {
@@ -146,7 +149,8 @@ padding-bottom: 20px;
     color: var(--theme_ph_orange);
     font-weight: var(--bold);
     text-align: center;
-    margin-top: 60px;
+    margin-top: 70px;
+    padding-top: 100px;
 }
 
 .parent-menu {
@@ -158,7 +162,7 @@ padding-bottom: 20px;
     margin-right: auto;
     width: 75%;
     gap: 15px;
-    padding: 5%;
+    padding: 2%;
 }
 
 .menu-child-1, .menu-child-2, .menu-child-3, .menu-child-4, .menu-child-5, .menu-child-6 {
@@ -167,6 +171,7 @@ padding-bottom: 20px;
     align-items: center;
     width: 251px;
     flex-wrap: wrap;
+    color: var(--theme_emperor)
   }
 
 .menu-child-1 > img, .menu-child-2 > img, .menu-child-3 > img, .menu-child-4 > img, .menu-child-5 > img, .menu-child-6 > img {
@@ -182,18 +187,85 @@ padding-bottom: 20px;
     display:flex;
     flex-direction: column;
     text-align: center;
-    color: var(--theme_deep_pink);
-    font-weight: var(--bold);
+    color: var(--theme_ph_orange);
+    padding: 2%;
 }
 
 #about-us-main {
+    padding-top: 80px;
     font-size: 50px;
+    font-weight: var(--bold);
 }
+
+#about-us-secondary {
+padding-top: 15px;
+font-size: 20px;
+color: var(--theme_dark_gray);
+font-weight: var(--reg);
+}
+
 .video-container {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
 }
+
+#franchise-main { 
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--theme_ph_orange);
+    padding-top: 7%;
+    font-size: 50px;
+    font-weight: var(--bold);
+}
+
+#franchise-secondary {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:40px;
+    padding-right: 40px;
+    font-size: 20px;
+    color: var(--theme_dark_gray);
+}
+
+#franchise-email {
+    font-weight: var(--bold);
+}
+
+.container-franchise-secondary {
+    display: flex;
+    color: var(--theme_dark_gray);
+    font-weight: var(--med);
+    margin-top: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.card-1, .card-2, .card-3, .card-4 {
+    height: auto;
+    width: 25%;
+    padding: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.image-card-1, .image-card-2, .image-card-3, .image-card-4 {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.card-1-caption > p, .card-2-caption > p, .card-3-caption > p, .card-4-caption > p {
+    padding: 15px;
+    padding-top: 18px;
+    text-align: center;
+}
+
+
+
+
+
+
+
 
 .orange-nav-parent {
     display:flex;
@@ -206,6 +278,7 @@ padding-bottom: 20px;
     padding-right: 5%;
     padding-top: 2px;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 .orange-right{
@@ -228,6 +301,8 @@ padding-bottom: 20px;
     font-weight: var(--bold);
     text-decoration: none;
 }
+
+container-franchise-secondary
 /* 
 Desktop: 769px and up
 Mobile: 425px and down
