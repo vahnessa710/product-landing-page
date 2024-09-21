@@ -3,37 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 @media only screen and (min-width: 1024px) {
-    
 }
-
 :root {
     --theme_white: #fff;
     --theme_mine_shaft: #222;
-    --theme_deep_pink: #f20c90;
-    --theme_ph_orange: #ff6e0c;
-    --theme_sea_serpent: #49cdd5;
-    --theme_emperor: #6e5e74;
-    --theme_dark_gray: #8f8f8f;
-    --theme_very_dark_gray: #4b4b4b;
-    --theme_very_light_red: #ff6c6c;
+    --theme_deep_pink: #F20C90;
+    --theme_ph_orange: #FF6E0C;
+    --theme_sea_serpent: #49CDD5;
+    --theme_emperor: #6E5E74;
+    --theme_dark_gray: #8F8F8F;
+    --theme_very_dark_gray: #4B4B4B;
+    --theme_very_light_red: #FF6C6C;
     --display: "Montserrat";
     --reg: 400;
     --med: 500;
     --semi: 600;
     --bold: 700;
 }
-
 #first-page{
     background: rgb(223,63,132);
     background: linear-gradient(180deg, rgba(223,63,132,1) 17%, rgb(224, 71, 138) 39%, rgb(194, 124, 150) 67%, rgb(255, 255, 255) 94%, rgb(255, 255, 255) 100%);
-    /* background-color: lightpink; */
     padding-bottom: 100px;
     padding-top: 15px;
+    width: 100%;
 }
-
-/* nav bar container*/
 
 #header {
     display: flex;
@@ -46,8 +40,6 @@
     align-items: center;
     justify-content: space-between;
 }
-
-/* dunkin donut logo on the upper left */
 
 #header-img {
     width: 100%;
@@ -64,58 +56,44 @@
     padding-right: 100px;
     font-weight: var(--bold);
     }
-
 .nav-link {
     text-decoration: none;
     font-size: 17px;
     font-family: var(--display);
     color: var(--theme_dark_gray);
 }
-
 /* Question: how to make transition smooth? */
 .nav-link:hover{
     cursor: pointer;
     color: var(--theme_ph_orange);
 }
-
 .parent {
-    display: grid;
-    grid-template-columns: 650px 476px;
-    margin-left: 100px;
-    font-family: var(--display);
-    padding-top: 30px;
+    display: flex;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 2%;
 }
-
-.child1-text {
-    font-size: 35px;
-    width: 500px;
-    height: 150px;
+.child1-text-container {
+    height: auto;
+    width: auto;
+}
+.child2-donuts-and-coffee {
+    height: auto;
+    width: auto;
+}
+.child1-text, .child2-text, .franchise {
     font-weight: var(--bold);
     color: var(--theme_white);
 }
 
-.child2-text{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 18px;
-    color: var(--theme_white);
-    font-weight: var(--med);
-    width: 500px;
-}
-
 .franchise {
-    width: 500px;
-    padding-top: 5px;
-    color: var(--theme_white);
-    font-size: 25px;
+    margin-top: 35px;
 }
-
-
-#form {
-    width: 500px;
+ #form {
+    display:flex;
 }
-
 #email {
+    display:flex;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 4px;
@@ -124,9 +102,8 @@
     height: 40px;
     border:transparent;
 }
-
 /* figure out how to style submit button */
-#send {
+#submit {
     font-weight: var(--bold);
     width: 100px;
     height: 40px;
@@ -135,15 +112,12 @@
     color: var(--theme_white);
     cursor: pointer;
     margin-left: 5px;
-} 
-
+}
 .img-donuts-coffee {
     max-width: 100%;
     height: auto;
 }
-
 /* MENU PAGE STARTS HERE */
-
 .explore-flavors {
     font-size: 50px;
     color: var(--theme_ph_orange);
@@ -152,7 +126,6 @@
     margin-top: 70px;
     padding-top: 100px;
 }
-
 .parent-menu {
     display:flex;
     justify-content: center;
@@ -164,7 +137,6 @@
     gap: 15px;
     padding: 2%;
 }
-
 .menu-child-1, .menu-child-2, .menu-child-3, .menu-child-4, .menu-child-5, .menu-child-6 {
     display: flex;
     justify-content: center;
@@ -173,7 +145,6 @@
     flex-wrap: wrap;
     color: var(--theme_emperor)
   }
-
 .menu-child-1 > img, .menu-child-2 > img, .menu-child-3 > img, .menu-child-4 > img, .menu-child-5 > img, .menu-child-6 > img {
   width: 250px;
   border: solid 1px var(--theme_white);
@@ -182,34 +153,29 @@
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
 }
-
-.about-us-text { 
+.about-us-text {
     display:flex;
     flex-direction: column;
     text-align: center;
     color: var(--theme_ph_orange);
     padding: 2%;
 }
-
 #about-us-main {
     padding-top: 80px;
     font-size: 50px;
     font-weight: var(--bold);
 }
-
 #about-us-secondary {
 padding-top: 15px;
 font-size: 20px;
 color: var(--theme_dark_gray);
 font-weight: var(--reg);
 }
-
 .video-container {
     display: flex;
     justify-content: center;
 }
-
-#franchise-main { 
+#franchise-main {
     display:flex;
     flex-direction: column;
     text-align: center;
@@ -218,7 +184,6 @@ font-weight: var(--reg);
     font-size: 50px;
     font-weight: var(--bold);
 }
-
 #franchise-secondary {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -227,11 +192,9 @@ font-weight: var(--reg);
     font-size: 20px;
     color: var(--theme_dark_gray);
 }
-
 #franchise-email {
     font-weight: var(--bold);
 }
-
 .container-franchise-secondary {
     display: flex;
     color: var(--theme_dark_gray);
@@ -240,7 +203,6 @@ font-weight: var(--reg);
     padding-left: 70px;
     padding-right: 70px;
 }
-
 .card-1, .card-2, .card-3, .card-4 {
     height: auto;
     width: 25%;
@@ -260,56 +222,131 @@ font-weight: var(--reg);
     text-align: center;
 }
 
-
-
-
-
-
-
-
 .orange-nav-parent {
     display:flex;
     width: 100%;
-    height: 60px;
+    height: 20%;
     background-color: var(--theme_ph_orange);
     justify-content: space-between;
     align-items: center;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 2px;
+    padding-top: 15px;
+    padding-bottom: 10px;
     flex-wrap: wrap;
     margin-top: 50px;
 }
 
-.orange-right{
-    border-radius: 20px;
-    border: 1px solid var(--theme_white);
-    padding: 10px;
+.orange-left-main, .orange-right-main {
+font-size: 20px;
+font-weight: var(--bold);
 }
 
-.orange-right:hover {
-    background-color: var(--theme_white);
+.all-right-reserved {
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    background-color: var(--theme_ph_orange);
 }
 
-.contact-us-text:hover{
-    color: var(--theme_ph_orange);
-}
 
-.contact-us-text{
-    color:var(--theme_white);
-    font-family: var(--display);
-    font-weight: var(--bold);
-    text-decoration: none;
-}
-
-container-franchise-secondary
-/* 
-Desktop: 769px and up
-Mobile: 425px and down
-Tablet: Between 426px and 768px
+/*
+Desktop: 992 px and up
+Medium Devices: 768 to 991
+Mobile / tablet : 600px to 760px
 */
 
-/* tablet and desktop screen */
 
+/* Small screen */
+@media only screen and (min-width: 600px) and (max-width: 760px) {
+    #nav-bar {
+        display:none;
+    }
+    .left, #header-img {
+        padding-left: 2%;
+    }
+    .child2-donuts-and-coffee {
+        width: 60%;
+    }
+    .child1-text-container {
+        text-align: center;
+    }
+    #form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .child1-text {
+        font-size: 25px;
+    }
+    .child2-text  {
+        font-size: 12px;
+        font-weight: var(--reg);
+    }
+    .parent {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .franchise, .about-us-main {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .explore-flavors  {
+        font-size: 30px;
+    }
+}
 
+/* Mid Screen */
+@media only screen and (min-width: 768px) and (max-width: 991px)  {
+    
+    #nav-bar {
+        display:none;
+    }
+    .left, #header-img {
+        padding-left: 2%;
+    }
+    .child2-donuts-and-coffee {
+        width: 60%;
+        margin-top: 40px;
+    }
+    .child1-text-container {
+        text-align: center;
+    }
+    #form {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    .child1-text {
+        font-size: 40px;
+    }
+    .child2-text  {
+        font-size: 20px;
+        font-weight: var(--reg);
+    }
+    .parent {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .franchise, .about-us-main {
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    .explore-flavors  {
+        margin-top: 0px;
+        font-size: 30px;
+    }
 
+    #about-us-secondary {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+/* Big Screen */
+@media only screen and (max-width: 992px) {
+}
