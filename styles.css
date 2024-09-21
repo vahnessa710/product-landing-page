@@ -25,7 +25,7 @@
     --bold: 700;
 }
 
-.first-page{
+#first-page{
 /* background-color: #DD307C; */
 /* background: rgb(215,51,126);
 background: linear-gradient(0deg, rgba(215,51,126,1) 5%, rgba(215,51,126,1) 28%, rgba(243,94,152,1) 57%, rgba(224,46,122,1) 100%);  */
@@ -125,10 +125,13 @@ padding-bottom: 20px;
 }
 /* figure out how to style submit button */
 #submit {
-    font-family: var(--reg);
+    font-weight: var(--bold);
     width: 100px;
     height: 40px;
     margin-top: 10px;
+    border-color: transparent;
+    background-color: var(--theme_sea_serpent);
+    color: var(--theme_white)
 } 
 
 .img-donuts-coffee {
@@ -144,30 +147,48 @@ padding-bottom: 20px;
     font-weight: var(--bold);
     text-align: center;
     margin-top: 60px;
-    margin-bottom: 80px;
 }
 
 .parent-menu {
-    display: flex;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
-    justify-content:flex-start;
-    padding-left: 5%;
-    padding-right: 5%;
+    gap: 15px;
+    padding: 5%;
 }
 
-/* #menu-child-1, #menu-child-2, #menu-child-3 {
-    width: 750px;
-    height: auto;
-    border: solid 1px var(--theme_white);
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
-} */
+.menu-child-1, .menu-child-2, .menu-child-3, .menu-child-4, .menu-child-5, .menu-child-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 251px;
+    flex-wrap: wrap;
+  }
 
+.menu-child-1 > img, .menu-child-2 > img, .menu-child-3 > img, .menu-child-4 > img, .menu-child-5 > img, .menu-child-6 > img {
+  width: 250px;
+  border: solid 1px var(--theme_white);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
 
+.about-us-text { 
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--theme_deep_pink);
+    font-weight: var(--bold);
+}
+
+#about-us-main {
+    font-size: 50px;
+}
 .video-container {
     display: flex;
     justify-content: center;
