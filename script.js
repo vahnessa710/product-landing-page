@@ -7,7 +7,7 @@ function response() {
 
 sendBtn.addEventListener('click', response);
 
-let divquantityContainer = document.getElementById("quantity-container");
+
 let add = document.getElementById("add");
 let counter = document.getElementById("counter");
 
@@ -26,3 +26,7 @@ function decrementOne() {
 }
 let minus = document.getElementById("minus");
 minus.addEventListener('click', decrementOne);
+
+if (counter === 0) {
+    
+};
