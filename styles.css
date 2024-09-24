@@ -3,8 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-@media only screen and (min-width: 1024px) {
-}
+
 :root {
     --theme_white: #fff;
     --theme_mine_shaft: #222;
@@ -126,6 +125,35 @@
     margin-top: 70px;
     padding-top: 100px;
 }
+
+#sampler {
+    font-size : 25px;
+}
+
+#cart-icon {
+    border-color: var(--theme_ph_orange);
+}
+
+#quantity-container {
+    display: flex;
+    font-size : 25px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#add, #minus, #counter {
+    color : var(--theme_very_dark_gray);
+    padding: 10px;
+    
+    font-size: 15px;
+    border: solid 1px var(--theme_emperor);
+    background-color: var(--theme_white);
+}
+
+#quantity-text {
+    margin-right: 15px;
+}
+
 .parent-menu {
     display:flex;
     justify-content: center;
@@ -143,7 +171,7 @@
     align-items: center;
     width: 251px;
     flex-wrap: wrap;
-    color: var(--theme_emperor)
+    color: var(--theme_emperor);
   }
 .menu-child-1 > img, .menu-child-2 > img, .menu-child-3 > img, .menu-child-4 > img, .menu-child-5 > img, .menu-child-6 > img {
   width: 250px;
@@ -263,7 +291,7 @@ Mobile / tablet : 600px to 760px
         display:none;
     }
     .left, #header-img {
-        padding-left: 2%;
+        padding: 2%;
     }
     .child2-donuts-and-coffee {
         width: 60%;
@@ -279,8 +307,12 @@ Mobile / tablet : 600px to 760px
         font-size: 25px;
     }
     .child2-text  {
-        font-size: 12px;
+        font-size: 18px;
         font-weight: var(--reg);
+    }
+
+    #email {
+        margin-left: 50px;
     }
     .parent {
         display: flex;
@@ -289,14 +321,43 @@ Mobile / tablet : 600px to 760px
         justify-content: center;
         align-items: center;
     }
-    .franchise, .about-us-main {
+    .franchise {
         font-size: 20px;
         margin-top: 10px;
     }
-    .explore-flavors  {
+    .explore-flavors, #about-us-main, #franchise-main {
         font-size: 30px;
     }
+
+    #first-page {
+        /* padding-right: 40px; */
+        padding-bottom: 50px;
+    }
+    #menu-page{
+        margin-top: 10px;
+        /* padding-right: 55px; */
+    }
+
+    #about-us-page, #about-us-secondary {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #franchise-main {
+        margin-top: 20px;
+    }
+    .container-franchise-secondary {
+        padding-left: 10px;
+        padding-right: 20px;
+        margin-right: 10px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
 }
+
+    /* , , #franchise-page, #orange-nav */
 
 /* Mid Screen */
 @media only screen and (min-width: 768px) and (max-width: 991px)  {
