@@ -136,18 +136,22 @@
 
 #quantity-container {
     display: flex;
-    font-size : 25px;
+    font-size : 20px;
     justify-content: center;
     margin-top: 10px;
 }
 
-#add, #minus, #counter {
+#add, #subtract, #counter {
     color : var(--theme_very_dark_gray);
     padding: 10px;
     
     font-size: 15px;
     border: solid 1px var(--theme_emperor);
     background-color: var(--theme_white);
+}
+
+#add, #subtract {
+    border-radius: 5px;
 }
 
 #quantity-text {
