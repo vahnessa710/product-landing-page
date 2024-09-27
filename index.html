@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+   
 </head>
 
 <body>
@@ -30,6 +30,8 @@
           <a href="#franchise-page" class="nav-link">FRANCHISE</a>
           <a href="#orange-nav" class="nav-link">CONTACT US</a>
         </div>
+
+        <!-- <div class="mobile-nav"><i class="fa-solid fa-bars"></i></div> -->
 
     </nav>
 
@@ -51,7 +53,7 @@
         <form method="post" id="form">
 
           <input id="email" name="email" type="email" required placeholder="Enter your email address">
-            <a href="#"><input type="submit"  id= "submit" value= "Send" /></a>
+            <a href="#"><input type="submit"  id= "submit" value= "Send" min="5" /></a>
 
         </form>
 
@@ -69,55 +71,51 @@
  
   <div class= "explore-flavors" id= "explore-flavors">
     <p>EXPLORE OUR FLAVORS</p>
-    <p id = "sampler">Try our half dozen sampler</p>
-      
-    <div id = "quantity-container">
-      <p id = "quantity-text">Quantity</p>
-      <button id = "minus"><i class="fa-solid fa-minus"></i></button>
-      <p id = "counter">0</p>
-      <button id = "add"><i class="fa-solid fa-plus"></i></button>
-    </div>
-    
   </div>
+  <p id = "sampler">Try our half dozen sampler</p>
+  <div id = "quantity-container">
+    <button id="subtract">-</button>
+    <input type="number" name="quantity" id="quantity" value="0" min="0">
+    <button id="add">+</button>
+  </div>
+
+  <div class = "checkout">
+    <span id = "checkout-btn">Check Out </span>
+  </div>
+  <div id = response-div></div>
+
+</section>
 
   <div class="parent-menu">
 
     <div class="menu-child-1">
       <img src="https://api.dunkin.com.ph/storage/uploads/menu/2023-02-27/dunkin-bavarian_16-59-38-236646.png" alt="bavarian" loading="lazy" title="bavarian">
-      <h3>Bavarian Filled</h3>
-      
-      <div id = "quantity-container">
-        <p id = "quantity-text">Qty</p>
-        <button id = "minus"><i class="fa-solid fa-minus"></i></button>
-        <p id = "counter">0</p>
-        <button id = "add"><i class="fa-solid fa-plus"></i></button>
-      </div>
-
+      <h3 id = "menu-caption">Bavarian Filled</h3>
     </div>
 
     <div class="menu-child-2">
       <img src="https://api.dunkin.com.ph/storage/uploads/menu/2023-02-27/dunkin-strawberry-filled_17-01-40-223329.png" alt="strawberryfilled" loading="lazy" title="strawberryfilled">
-      <h3>Strawberry Filled</h3>
+      <h3 id = "menu-caption">Strawberry Filled</h3>
     </div>
 
     <div class="menu-child-3">
       <img src="https://api.dunkin.com.ph/storage/uploads/menu/2023-02-27/dunkin-boston-kreme_16-55-36-342080.png" alt="bostonkreme" loading="lazy" title="bostonkreme">
-      <h3>Boston Kreme</h3>
+      <h3 id = "menu-caption">Boston Kreme</h3>
     </div>
 
     <div class="menu-child-4">
       <img src="https://api.dunkin.com.ph/storage/uploads/menu/2023-02-27/dunkin-sugar-raised_17-02-40-029568.png" alt="sugarraised" loading="lazy" title="sugarraised">
-      <h3>Sugar Raised</h3>
+      <h3 id = "menu-caption">Sugar Raised</h3>
     </div>
 
     <div class="menu-child-5">
       <img src="https://api.dunkin.com.ph/storage/uploads/menu/2023-02-27/dunkin-choco-butternut_17-41-56-133409.png" alt="chocobtn" loading="lazy" title="chocobtn">
-      <h3>Choco Butternut</h3>
+      <h3 id = "menu-caption">Choco Butternut</h3>
     </div>
 
     <div class="menu-child-6">
       <img src="https://api.dunkin.com.ph/storage/uploads/menu/2023-02-28/dunkin-choco-kreme_09-37-17-609834.png" alt="chocokreme" loading="lazy" title="chocokreme">
-      <h3>Choco Kreme</h3>
+      <h3 id = "menu-caption">Choco Kreme</h3>
     </div>
 
   </div>
