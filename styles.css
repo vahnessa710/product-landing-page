@@ -148,6 +148,7 @@ section {
     height: 40px;
 }
 
+<<<<<<< HEAD
 #quantity {
     width: 60px;
     margin-left: 10px;
@@ -156,6 +157,9 @@ section {
 }
 
 #add, #subtract, #quantity {
+=======
+#add, #subtract, #counter {
+>>>>>>> a9a814812bd6d9f3541430f98154a588bb940bd1
     color : var(--theme_very_dark_gray);
     padding: 10px;
     font-size: 15px;
@@ -165,7 +169,15 @@ section {
 }
 
 #add, #subtract {
+<<<<<<< HEAD
     width: 40px;
+=======
+    border-radius: 5px;
+}
+
+#quantity-text {
+    margin-right: 15px;
+>>>>>>> a9a814812bd6d9f3541430f98154a588bb940bd1
 }
 
 input::-webkit-outer-spin-button,
