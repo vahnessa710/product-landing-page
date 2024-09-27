@@ -71,15 +71,16 @@
  
   <div class= "explore-flavors" id= "explore-flavors">
     <p>EXPLORE OUR FLAVORS</p>
-    <p id = "sampler">Try our half dozen sampler</p>
-      
-    <div id = "quantity-container">
-      <p id = "quantity-text">Quantity</p>
-      <button id = "minus"><i class="fa-solid fa-minus"></i></button>
-      <p id = "counter">0</p>
-      <button id = "add"><i class="fa-solid fa-plus"></i></button>
-    </div>
-    
+  </div>
+  <p id = "sampler">Try our half dozen sampler</p>
+  <div id = "quantity-container">
+    <button id="subtract">-</button>
+    <input type="number" name="quantity" id="quantity" value="0" min="0">
+    <button id="add">+</button>
+  </div>
+
+  <div class = "checkout">
+    <span id = "checkout-btn">Check Out </span>
   </div>
   <div id = response-div></div>
 
