@@ -318,6 +318,10 @@ font-weight: var(--bold);
     background-color: var(--theme_ph_orange);
 }
 
+.mobile-header{
+    font-size: 30px;
+    padding: 18px;
+}
 
 /*
 Desktop: 992 px and up
@@ -328,7 +332,7 @@ Mobile / tablet : 600px to 760px
 
 /* Small screen */
 @media only screen and (max-width: 760px) {
-    #nav-bar {
+    .right-nav-bar {
         display:none;
     }
     .left, #header-img {
@@ -399,7 +403,7 @@ Mobile / tablet : 600px to 760px
 /* Mid Screen */
 @media only screen and (min-width: 768px) and (max-width: 991px)  {
     
-    #nav-bar {
+    .right-nav-bar {
         display:none;
     }
     .left, #header-img {
@@ -444,13 +448,14 @@ Mobile / tablet : 600px to 760px
         margin-left: 25px;
         margin-right: 25px;
     }
-    .mobile-nav {
-        display: none;
+    .mobile-header {
+        display: block;
     }
+}
 
 /* Big Screen */
-@media only screen and (max-width: 992px) {
-    .mobile-nav {
+@media only screen and (min-width: 992px) {
+    .mobile-header {
         display: none;
     }
 }
